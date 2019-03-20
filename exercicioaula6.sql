@@ -69,7 +69,7 @@ update cidade set nome = 'Cidade Canção' where id = 18
 
 /*6 - Faça um select que retorne o nome das cidades e seus respectivos estados. Ordene por estados e posteriormente pelo nome das cidades */
 
-select cid.id,uf.nome,cid.nome from public.uf uf, public.cidade cid where uf.id = cid.id_uf ORDER BY uf.nome asc
+select uf.nome,cid.nome from public.uf uf, public.cidade cid where uf.id = cid.id_uf ORDER BY uf.nome asc
 
 
 /* 7- Retorne quantas cidades cada estado possui :) (não expliquei ainda)
